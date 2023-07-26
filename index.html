@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Lugrasimo&family=Permanent+Marker&family=Poppins:ital,wght@1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lugrasimo&family=Permanent+Marker&display=swap');
+        body{
+            background-color: #2f2d38;
+        }
+
+
+        form {
+    margin: -0 auto;
+    width: 450px;
+    padding: 32px;
+    border: 2px solid #222225 ;
+    border-radius: 2em;
+}
+
+h2 {
+    color: #ffffff;
+    text-align: center;
+    padding: 3px;
+    width: -100%;
+    font-family: 'Lugrasimo', cursive;
+}
+
+ul {
+    list-style: circle;
+    padding: 0;
+    margin: 1;
+}
+
+form li+li {
+    width: 10px;
+    margin-top: 1em;
+    text-align: center;
+}
+
+label {
+    color: #ffffff;
+    display: inline-block;
+    width: 100px;
+    text-align: left;
+    font-family: 'Lugrasimo', cursive;
+}
+
+input, textarea {
+    font: 1em sans-serif;
+    width: 350px;
+    box-sizing: border-box;
+    border: 1px solid #999;
+}
+
+textarea {
+    vertical-align: top;
+    height: 5em;
+}
+
+.button {
+    display: inline-block;
+    color: #234323;
+    text-transform: uppercase;
+    padding: 10%;
+    padding-left: 170px;
+    padding-right: .9em;
+    font-family: 'Lugrasimo', cursive;
+    width: 50;
+    margin-bottom: 1px;
+}
+
+.nombre {
+    font-size: 450px;
+}
+
+.apellido {
+    display: block;
+}
+    </style>
+</head>
+<body>
+
+    <h2>Banco de Sangre</h2>
+
+    <h2>Registro de Paciente</h2>
+    <form action="index.html" method="post">
+    <ul>
+        <li>
+            <label for="nombre">Nombre:</label>
+            <input placeholder="Nombres" type="text" id="nombre" name="nombre_usuario"  required="">
+        </li>
+        <li>
+            <label for="apellido">Apellido:</label>
+            <input placeholder="Apellidos" type="text" name="apellido" id="nombre_usuario" required="">
+        </li>
+        <li>
+            <label for="fechanac">Fecha de nacimiento:</label>
+            <input type="date" name="fechanac" id="fechanac_usuario" required="">
+        </li>
+        <li>
+            <label for="email">Correo electronico:</label>
+            <input type="email" name="fechanac" id="correo_usuario" placeholder="Correo electronico">
+        </li>
+        <li>
+            <label for="dui">DUI del donante:</label>
+            <input type="dui" name="Inserte DUI" id="dui_usuario" placeholder="Inserte aqui">
+        </li>
+        <li>
+            <label for="contra">Contraseña:</label>
+            <input type="password" name="fechanac" id="contra_usuario" placeholder="password">
+        </li>
+        <li>
+            <label for="direccion">Dirección:</label>
+            <textarea id="direccion" name="direccion_usuario" placeholder="Dirección"></textarea>
+        </li>
+        <li class="button">
+            <button type="submit" id="btn_resgistro" name="btn_resgistro">Registrarme!</button>
+        </li>
+
+    </ul>
+    </form>
+</body>
+</html>
